@@ -23,6 +23,7 @@
     </parent>
 
     <artifactId>certified-mule-connector-parent</artifactId>
+    <version>3.9.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -120,7 +121,7 @@
                     </execution>
                 </executions>
             </plugin>
-            
+
         </plugins>
     </build>
 
@@ -173,5 +174,11 @@
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
+
+    <scm>
+        <connection>scm:git:git://github.com:mulesoft/certified-mule-connector-parent.git</connection>
+        <developerConnection>scm:git:git@github.com:mulesoft/certified-mule-connector-parent.git</developerConnection>
+        <url>https://github.com/mulesoft/certified-mule-connector-parent</url>
+    </scm>
 </project>
 
