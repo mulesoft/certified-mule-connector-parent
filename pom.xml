@@ -178,7 +178,7 @@
 
     <profiles>
         <profile>
-            <id>deploy</id>
+            <id>certified-parent-pom-deploy</id>
             <distributionManagement>
                 <repository>
                     <id>mulesoft-releases</id>
