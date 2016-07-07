@@ -174,11 +174,5 @@
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
-
-    <scm>
-        <connection>scm:git:git://github.com:mulesoft/certified-mule-connector-parent.git</connection>
-        <developerConnection>scm:git:git@github.com:mulesoft/certified-mule-connector-parent.git</developerConnection>
-        <url>https://github.com/mulesoft/certified-mule-connector-parent</url>
-    </scm>
 </project>
 
