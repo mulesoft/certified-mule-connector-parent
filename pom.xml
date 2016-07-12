@@ -29,6 +29,23 @@
         <jacoco.plugin.version>0.7.2.201409121644</jacoco.plugin.version>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <sonar.exclusions>
+                    target/**
+                </sonar.exclusions>
+                <sonar.inclusions>
+                    pom.xml
+                </sonar.inclusions>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
         <plugins>
             <plugin>
