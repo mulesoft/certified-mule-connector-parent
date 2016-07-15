@@ -102,4 +102,4 @@ local.properties
 .recommenders/
 
 # Mule
-mule-devkit-parent.iml
+certified-mule-connector-parent.iml
