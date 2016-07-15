@@ -6,7 +6,7 @@
     <description>
         This is a parent POM with default settings for building certified connectors.
     </description>
-    <url>http://github.com/mulesoft/mule-devkit-parent</url>
+    <url>https://github.com/mulesoft/certified-mule-connector-parent</url>
     <inceptionYear>2010</inceptionYear>
 
     <scm>
