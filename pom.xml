@@ -66,20 +66,6 @@
                 </snapshotRepository>
             </distributionManagement>
         </profile>
-        <profile>
-            <id>sonar</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <sonar.exclusions>
-                    target/**
-                </sonar.exclusions>
-                <sonar.inclusions>
-                    pom.xml
-                </sonar.inclusions>
-            </properties>
-        </profile>
     </profiles>
 
     <build>
