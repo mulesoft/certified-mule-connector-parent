@@ -18,11 +18,11 @@
     <parent>
         <groupId>org.mule.tools.devkit</groupId>
         <artifactId>mule-devkit-parent</artifactId>
-        <version>3.9.1</version>
+        <version>3.9.2</version>
     </parent>
 
     <artifactId>certified-mule-connector-parent</artifactId>
-    <version>3.9.1</version>
+    <version>3.9.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -64,20 +64,6 @@
                     <uniqueVersion>false</uniqueVersion>
                 </snapshotRepository>
             </distributionManagement>
-        </profile>
-        <profile>
-            <id>sonar</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <sonar.exclusions>
-                    target/**
-                </sonar.exclusions>
-                <sonar.inclusions>
-                    pom.xml
-                </sonar.inclusions>
-            </properties>
         </profile>
     </profiles>
 
