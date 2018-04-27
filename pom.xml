@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.mule.extensions</groupId>
@@ -54,4 +55,16 @@
         <url>https://github.com/mulesoft/certified-mule-connector-parent</url>
         <tag>HEAD</tag>
     </scm>
+    <distributionManagement>
+        <repository>
+            <id>${deployment.server.id}</id>
+            <name>${deployment.server.name}</name>
+            <url>${deployment.server.url}</url>
+        </repository>
+        <snapshotRepository>
+            <id>${deployment.snapshot.server.id}</id>
+            <name>${deployment.snapshot.server.name}</name>
+            <url>${deployment.snapshot.server.url}</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
