@@ -3,11 +3,11 @@
     <parent>
         <groupId>org.mule.extensions</groupId>
         <artifactId>mule-modules-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.1.1</version>
     </parent>
-    <groupId>com.mulesoft.connectors</groupId>
+    <groupId>org.mule.connectors</groupId>
     <artifactId>mule-certified-parent</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.2.0</version>
     <packaging>pom</packaging>
     <name>Mule Certified Parent POM</name>
     <properties>
@@ -52,6 +52,18 @@
         <connection>scm:git:git@github.com:mulesoft/certified-mule-connector-parent.git</connection>
         <developerConnection>scm:git:git@github.com:mulesoft/certified-mule-connector-parent.git</developerConnection>
         <url>https://github.com/mulesoft/certified-mule-connector-parent</url>
-        <tag>HEAD</tag>
+        <tag>mule-certified-parent-1.2.0</tag>
     </scm>
+    <distributionManagement>
+        <repository>
+            <id>${deployment.server.id}</id>
+            <name>${deployment.server.name}</name>
+            <url>${deployment.server.url}</url>
+        </repository>
+        <snapshotRepository>
+            <id>${deployment.snapshot.server.id}</id>
+            <name>${deployment.snapshot.server.name}</name>
+            <url>${deployment.snapshot.server.url}</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
