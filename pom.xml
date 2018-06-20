@@ -54,18 +54,6 @@
         <developerConnection>scm:git:git@github.com:mulesoft/certified-mule-connector-parent.git</developerConnection>
         <url>https://github.com/mulesoft/certified-mule-connector-parent</url>
     </scm>
-    <distributionManagement>
-        <repository>
-            <id>${deployment.server.id}</id>
-            <name>${deployment.server.name}</name>
-            <url>${deployment.server.url}</url>
-        </repository>
-        <snapshotRepository>
-            <id>${deployment.snapshot.server.id}</id>
-            <name>${deployment.snapshot.server.name}</name>
-            <url>${deployment.snapshot.server.url}</url>
-        </snapshotRepository>
-    </distributionManagement>
     <repositories>
         <repository>
             <id>mule-releases</id>
