@@ -7,7 +7,7 @@
     </parent>
     <groupId>org.mule.connectors</groupId>
     <artifactId>mule-certified-parent</artifactId>
-    <version>1.2.3</version>
+    <version>1.2.4-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Mule Certified Parent POM</name>
     <properties>
@@ -52,7 +52,7 @@
         <connection>scm:git:git@github.com:mulesoft/certified-mule-connector-parent.git</connection>
         <developerConnection>scm:git:git@github.com:mulesoft/certified-mule-connector-parent.git</developerConnection>
         <url>https://github.com/mulesoft/certified-mule-connector-parent</url>
-      <tag>mule-certified-parent-1.2.3</tag>
+      <tag>HEAD</tag>
   </scm>
     <repositories>
         <repository>
