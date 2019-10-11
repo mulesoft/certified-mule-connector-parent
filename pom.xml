@@ -22,11 +22,11 @@
     </parent>
 
     <artifactId>certified-mule-connector-parent</artifactId>
-    <version>3.9.7</version>
+    <version>3.9.8-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
-        <jacoco.plugin.version>0.7.2.201409121644</jacoco.plugin.version>
+        <jacoco.plugin.version>0.8.3</jacoco.plugin.version>
     </properties>
 
     <profiles>
@@ -121,39 +121,13 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco.plugin.version}</version>
+                <configuration>
+                    <destFile>${session.executionRootDirectory}/target/jacoco-java.exec</destFile>
+                </configuration>
                 <executions>
                     <execution>
-                        <id>prepare-agent</id>
-                        <phase>process-classes</phase>
                         <goals>
                             <goal>prepare-agent</goal>
-                        </goals>
-                        <configuration>
-                            <propertyName>jacoco.ut.agent</propertyName>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>prepare-agent-integration</id>
-                        <phase>pre-integration-test</phase>
-                        <goals>
-                            <goal>prepare-agent-integration</goal>
-                        </goals>
-                        <configuration>
-                            <propertyName>jacoco.it.agent</propertyName>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>report</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>report-integration</id>
-                        <phase>post-integration-test</phase>
-                        <goals>
-                            <goal>report-integration</goal>
                         </goals>
                     </execution>
                 </executions>
