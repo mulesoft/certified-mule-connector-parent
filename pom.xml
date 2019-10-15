@@ -126,9 +126,56 @@
                 </configuration>
                 <executions>
                     <execution>
+                        <id>prepare-agent</id>
+                        <phase>process-classes</phase>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
+                        <configuration>
+                            <propertyName>jacoco.ut.agent</propertyName>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>prepare-agent-integration</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>prepare-agent-integration</goal>
+                        </goals>
+                        <configuration>
+                            <propertyName>jacoco.it.agent</propertyName>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report-integration</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>report-integration</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>merge</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>merge</goal>
+                        </goals>
+                        <configuration>
+                            <destFile>${session.executionRootDirectory}/target/jacoco.exec</destFile>
+                            <fileSets>
+                                <fileSet>
+                                    <directory>${project.build.directory}</directory>
+                                    <includes>
+                                        <include>*.exec</include>
+                                    </includes>
+                                </fileSet>
+                            </fileSets>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
