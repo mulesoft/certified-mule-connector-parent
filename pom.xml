@@ -12,7 +12,7 @@
         <connection>scm:git:git://github.com:mulesoft/certified-mule-connector-parent.git</connection>
         <developerConnection>scm:git:git@github.com:mulesoft/certified-mule-connector-parent.git</developerConnection>
         <url>http://github.com/mulesoft/certified-mule-connector-parent</url>
-        <tag>certified-mule-connector-parent-3.9.7</tag>
+        <tag>certified-mule-connector-parent-3.9.8</tag>
     </scm>
 
     <parent>
@@ -22,7 +22,7 @@
     </parent>
 
     <artifactId>certified-mule-connector-parent</artifactId>
-    <version>3.9.8-SNAPSHOT</version>
+    <version>3.9.8</version>
     <packaging>pom</packaging>
 
     <properties>
