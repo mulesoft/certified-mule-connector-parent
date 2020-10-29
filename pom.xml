@@ -18,11 +18,11 @@
     <parent>
         <groupId>org.mule.tools.devkit</groupId>
         <artifactId>mule-devkit-parent</artifactId>
-        <version>3.9.7</version>
+        <version>3.9.12</version>
     </parent>
 
     <artifactId>certified-mule-connector-parent</artifactId>
-    <version>3.9.8</version>
+    <version>3.9.12</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -219,7 +219,7 @@
     </pluginRepositories>
 
     <distributionManagement>
-        <repository>
+    <!-- <repository>
             <id>mule-ee-releases</id>
             <name>MuleEE Releases Repository</name>
             <url>https://repository-master.mulesoft.org/nexus/content/repositories/releases-ee/</url>
@@ -229,8 +229,19 @@
             <name>MuleEE Snapshots Repository</name>
             <url>https://repository-master.mulesoft.org/nexus/content/repositories/ci-snapshots/</url>
             <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository> -->
+        <repository>
+            <id>mule-releases</id>
+            <name>Mule Release Repository</name>
+            <layout>default</layout>
+            <url>https://repository-master.mulesoft.org/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>mule-snapshots</id>
+            <name>Mule Snapshot Repository</name>
+            <url>https://repository-master.mulesoft.org/nexus/content/repositories/snapshots</url>
+            <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
 
 </project>
-
