@@ -12,7 +12,7 @@
         <connection>scm:git:git://github.com:mulesoft/certified-mule-connector-parent.git</connection>
         <developerConnection>scm:git:git@github.com:mulesoft/certified-mule-connector-parent.git</developerConnection>
         <url>http://github.com/mulesoft/certified-mule-connector-parent</url>
-        <tag>certified-mule-connector-parent-3.9.8</tag>
+        <tag>certified-mule-connector-parent-3.9.7.1</tag>
     </scm>
 
     <parent>
@@ -22,7 +22,7 @@
     </parent>
 
     <artifactId>certified-mule-connector-parent</artifactId>
-    <version>3.9.8</version>
+    <version>3.9.7.1</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -122,9 +122,6 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco.plugin.version}</version>
-                <configuration>
-                    <destFile>${session.executionRootDirectory}/target/jacoco-java.exec</destFile>
-                </configuration>
                 <executions>
                     <execution>
                         <id>prepare-agent</id>
@@ -159,24 +156,6 @@
                         <goals>
                             <goal>report-integration</goal>
                         </goals>
-                    </execution>
-                    <execution>
-                        <id>merge</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>merge</goal>
-                        </goals>
-                        <configuration>
-                            <destFile>${session.executionRootDirectory}/target/jacoco.exec</destFile>
-                            <fileSets>
-                                <fileSet>
-                                    <directory>${project.build.directory}</directory>
-                                    <includes>
-                                        <include>*.exec</include>
-                                    </includes>
-                                </fileSet>
-                            </fileSets>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
