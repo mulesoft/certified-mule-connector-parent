@@ -1,0 +1,1 @@
+connectorsEntryPoint('library')
