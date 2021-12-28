@@ -22,7 +22,7 @@
     </parent>
 
     <artifactId>certified-mule-connector-parent</artifactId>
-    <version>3.9.14-SNAPSHOT</version>
+    <version>3.9.14</version>
     <packaging>pom</packaging>
 
     <properties>
