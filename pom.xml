@@ -12,17 +12,17 @@
         <connection>scm:git:git://github.com:mulesoft/certified-mule-connector-parent.git</connection>
         <developerConnection>scm:git:git@github.com:mulesoft/certified-mule-connector-parent.git</developerConnection>
         <url>http://github.com/mulesoft/certified-mule-connector-parent</url>
-        <tag>certified-mule-connector-parent-3.9.13</tag>
+        <tag>certified-mule-connector-parent-3.9.16</tag>
     </scm>
 
     <parent>
         <groupId>org.mule.tools.devkit</groupId>
         <artifactId>mule-devkit-parent</artifactId>
-        <version>3.9.14</version>
+        <version>3.9.16</version>
     </parent>
 
     <artifactId>certified-mule-connector-parent</artifactId>
-    <version>3.9.14-SNAPSHOT</version>
+    <version>3.9.16-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
