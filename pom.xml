@@ -18,11 +18,11 @@
     <parent>
         <groupId>org.mule.tools.devkit</groupId>
         <artifactId>mule-devkit-parent</artifactId>
-        <version>3.9.16</version>
+        <version>3.9.17-SNAPSHOT</version>
     </parent>
 
     <artifactId>certified-mule-connector-parent</artifactId>
-    <version>3.9.16</version>
+    <version>3.9.17-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
