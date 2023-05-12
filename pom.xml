@@ -11,7 +11,7 @@
     <scm>
         <connection>scm:git:git://github.com:mulesoft/certified-mule-connector-parent.git</connection>
         <developerConnection>scm:git:git@github.com:mulesoft/certified-mule-connector-parent.git</developerConnection>
-        <url>http://github.com/mulesoft/certified-mule-connector-parent</url>
+        <url>https://github.com/mulesoft/certified-mule-connector-parent</url>
         <tag>certified-mule-connector-parent-3.9.17</tag>
     </scm>
 
@@ -22,7 +22,7 @@
     </parent>
 
     <artifactId>certified-mule-connector-parent</artifactId>
-    <version>3.9.17</version>
+    <version>3.9.18</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -55,12 +55,12 @@
                 <repository>
                     <id>mulesoft-releases</id>
                     <name>MuleSoft Repository</name>
-                    <url>http://repository-master.mulesoft.org/releases/</url>
+                    <url>https://repository-master.mulesoft.org/releases/</url>
                 </repository>
                 <snapshotRepository>
                     <id>mulesoft-snapshots</id>
                     <name>MuleSoft Snapshot Repository</name>
-                    <url>http://repository-master.mulesoft.org/snapshots/</url>
+                    <url>https://repository-master.mulesoft.org/snapshots/</url>
                     <uniqueVersion>false</uniqueVersion>
                 </snapshotRepository>
             </distributionManagement>
@@ -186,13 +186,13 @@
         <repository>
             <id>mulesoft-releases</id>
             <name>MuleSoft Releases Repository</name>
-            <url>http://repository.mulesoft.org/releases/</url>
+            <url>https://repository.mulesoft.org/releases/</url>
             <layout>default</layout>
         </repository>
         <repository>
             <id>mulesoft-snapshots</id>
             <name>MuleSoft Snapshots Repository</name>
-            <url>http://repository.mulesoft.org/snapshots/</url>
+            <url>https://repository.mulesoft.org/snapshots/</url>
             <layout>default</layout>
         </repository>
         <repository>
@@ -207,13 +207,13 @@
         <pluginRepository>
             <id>mulesoft-plugin-releases</id>
             <name>MuleSoft Release Repository</name>
-            <url>http://repository.mulesoft.org/releases/</url>
+            <url>https://repository.mulesoft.org/releases/</url>
             <layout>default</layout>
         </pluginRepository>
         <pluginRepository>
             <id>mulesoft-plugin-snapshots</id>
             <name>MuleSoft Snapshots Repository</name>
-            <url>http://repository.mulesoft.org/snapshots/</url>
+            <url>https://repository.mulesoft.org/snapshots/</url>
             <layout>default</layout>
         </pluginRepository>
     </pluginRepositories>
